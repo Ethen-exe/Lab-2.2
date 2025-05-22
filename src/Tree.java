@@ -8,6 +8,8 @@ public class Tree {
     private List<Tree> subtrees;
 
     public Tree(Integer root, List<Tree> subtrees) {
+        // requireNonNullElseGet came from IntelliJ suggestions after the original implementation
+        // of if statements checking if the second param is null or not
         this.subtrees = Objects.requireNonNullElseGet(subtrees, ArrayList::new);
         this.root = root;
     }
