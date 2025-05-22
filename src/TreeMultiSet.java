@@ -6,9 +6,15 @@ public class TreeMultiSet extends MultiSet {
      *
      * @param item the item to add
      */
+    private Tree set = new Tree(null, null);
     @Override
-    void add(Integer item) {
+    public void add(Integer item) {
         // TODO complete this method
+        set.add(item);
+    }
+
+    public void remove(Integer item) {
+        set.remove(item);
     }
     // TODO write the rest of the implementation for this class so that it uses its private Tree
     //      object to provide the MultiSet functionality.
